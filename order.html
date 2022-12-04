@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <title>order now</title>
+    <style>
+        .con{
+            margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        b{
+            font-size: large;
+        }
+        p{
+            color: red;
+        }
+        .add{
+            border: 1px solid black;
+            
+        }
+        #status{
+            display: none;
+        }
+    </style>
+    <script>
+        function display(){
+            let a = document.getElementById('status');
+            a.style.display = 'block';
+        };
+    </script>
+</head>
+<body>
+    <div class="con">
+        <b>Order Now</b>
+        <br><br>
+        <span>Order Total :</span><p> 1299rs.</p>
+        <span>Payment Method :</span><p> Debit card</p>
+        <span>Delivery To </span>
+        <span class="add">
+            gandhi nagar ,route 4 <br>
+            house no 6 <br>
+            hyderabad, Telanagana
+        </span>
+        <br>
+        <span>Add delivery Instructions</span>
+        <input type="text" name="" id="">
+        <br><br>
+        <button onclick="display();">Place your order</button>
+        <p id="status">Order successfully placed</p>
+    </div>
+
+</body>
+</html>
