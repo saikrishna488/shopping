@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Shopping</title>
+        <style>
+            body{
+            }
+            #title{
+                margin: auto;
+                text-align: center;
+                padding: 20px;
+                padding-bottom: 20px;
+                background-color: #696969;
+                color: white
+            }
+            .box{
+                height: 500px;
+                width: 500px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 15px;
+                margin: auto;
+                margin-top: 20px;
+                padding: 20px;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            #name{
+                height: 30px;
+                width: 300px;
+                margin: 10px;
+                padding: 10px;
+                font-size: large;
+            }
+            #loti{
+                margin-bottom: 50px;
+            }
+            #loginbu{
+                margin: 20px;
+                font-size: large;
+                padding: 8px 50px;
+                background-color: #696969;
+                color: aliceblue;
+                cursor: pointer;
+            }
+            #loginbu:hover{
+                background-color: black;
+            }
+            #temp{
+                background-color: pink;
+            }
+            .con1{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            #fp{
+                width: 50%;
+                margin-left: 20px;
+                text-align: end;
+            }
+            #lab{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Online Shopping</h1>
+        <div class="box">
+            <form action="main.html" class="container">
+                <h1 id="loti">Login</h1>
+                <label for="email">Email<br></label>
+                <input type="email" name="myemail" id="name">
+                <br>
+                <label for="password">Password<br></label>
+                <input type="password" name="mypass" id="name">
+                <input onclick="location.href='main.html';"type="button" value="Login" name="lobutton" id="loginbu" >
+                <div class="con1">
+                    <div id="lab">
+                        <input type="checkbox" name="remember-me" id="rem">
+                    <label for="chk" style='font-family: "Lucida Console", "Courier New", monospace;'>Remember me</label>
+                    </div>
+                    <a href="" id="fp">Forgot Password?</a>
+                </div>
+                <br><br>
+                <div id="con2">
+                    <h4>Sign up with <a href="register.html">Google</a> <a href="register.html">Facebook</a> <a href="register.html">Twitter</a></h4>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

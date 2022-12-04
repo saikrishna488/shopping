@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+    <head>
+        <title>main page</title>
+        <style>
+            .nav{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .con{
+                display: flex;
+                flex-direction: column;
+                margin: 10px 20px;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            .img{
+                height: 30px;
+                width: 30px;
+            }
+            #sea{
+                font-size: large;
+            }
+            .mid{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            .item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid black;
+                border-radius: 50%;
+                width: 200px;
+                margin: 20px;
+                cursor: pointer;
+            }
+            .item:hover{
+                border: 1px solid blue;
+            }
+            .icon{
+                height: 80px;
+                width: 80px;
+            }
+            .bottom{
+                margin-top: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #ab{
+                border-bottom: 1px solid black;
+            }
+            .pa{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="con">
+                <img src="heart.png" class="img"alt="ntg">
+                <p>wishlist</p>
+            </div>
+            <div class="con">
+                <img src="shop.png" class="img"alt="ntg">
+                <p>Cart</p>
+            </div>
+            <div class="con">
+                <img src="qr.png" class="img"alt="ntg">
+                <p>Scan</p>
+            </div>
+            <div class="con" style="align-self: flex-start;">
+                <input type="search" id="sea"placeholder="Search">
+            </div>
+            <div class="con">
+                <img src="user.png" class="img"alt="ntg">
+                <p>Profile</p>
+            </div>
+            <div class="con">
+                <img src="menu.png" class="img"alt="ntg">
+                <p>menu</p>
+            </div>
+        </nav>
+        <div class="mid">
+            <div class="item">
+                <img src="female.png" class="icon"alt="ntg">
+                <p>Women</p>
+            </div>
+            <div class="item">
+                <img src="male.png" class="icon"alt="ntg">
+                <p>Men</p>
+            </div>
+            <div class="item">
+                <img src="kids.png" class="icon"alt="ntg">
+                <p>Kids</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <h4 id="ab">About Company</h4>
+            <div class="about">
+                <p class="pa">About us</p>
+                <p class="pa">Careers</p>
+                <p class="pa">Manufacturing process</p>
+                <p class="pa">Be a partner</p>
+            </div>
+        </div>
+    </body>
+</html>
